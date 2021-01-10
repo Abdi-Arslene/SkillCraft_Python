@@ -1,0 +1,45 @@
+{% extends 'bootstrap/base.html'%}
+{%block content%}
+<html>
+
+<head>
+<title>your results</title>
+<style>
+body {
+  background-image: url("{{url_for('static', filename='img.jpeg')}}");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+
+
+<body>
+<h1 style="
+    color: white;
+    text-align: center;
+    margin-top: 16%;
+    font-family: revert;
+    font-weight: 900;
+    font-size: xxx-large;
+"> HERE IS YOUR RESULT : LEVEL {{pred}} <h1>
+
+</body>
+<footer style="
+    font-size: x-small;
+    color: white;
+    margin-top: 25%;
+    text-align: center;
+">
+ <br> <label style="font-size: initial;">LEVELs</label>  <br>
+  1 :  Bronze &nbsp; |&nbsp; 
+  2 : Silver &nbsp; |&nbsp; 
+  3 : Gold &nbsp; |&nbsp; 
+  4 : Platinum &nbsp; |&nbsp; 
+  5 : Diamond &nbsp; |&nbsp; 
+  6 : Master &nbsp; |&nbsp; 
+  7 :  GrandMaster &nbsp; 
+</footer>
+</html>
+{%endblock%}
